@@ -1,20 +1,30 @@
 // prendo il documento dalla dom
 const targetElement = document.getElementById('target');
-let numberElement = document.getElementById('number')
 
 // Variabili
-let number = '';
+
 
 for (let i = 0; i <= 100; i++){
-    number = 'i' ;
-    console.log(i);
 
-    if(i%3==0){
-        number = 'rizz'
+    let number = '';
+    
+    if(i%3 === 0){
+    number = 'fizz';
+    console.log(number);
 
     }
+    if(i%5 === 0){
+        number = 'buzz';
+        console.log(number);
+    }
+    if(i%3 == 0 && i%5 == 0){
+        number = 'fizzbuzz';
+        console.log(number);
 
+    }
 }
+
+
 
 
 // prendo il documento 
